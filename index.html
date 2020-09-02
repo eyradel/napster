@@ -673,8 +673,8 @@
     <i class="fa fa-instagram w3-hover-opacity fa-2x" onclick="window.location.href='https://www.instagram.com/p/CC85_IOBmk4/?igshid=n43o7nvn3c3w';"></i>
       &nbsp;
       <i class="fa fa-comments-o w3-hover-opacity fa-2x" onclick="window.location.href='https://iboychater.000webhostapp.com/';"></i>
-      <button onclick="fun_name();" class="btn-floating">
-      <i class="fa fa-share-alt w3-hover-opacity fa-2x" ></i></button>
+   
+      <i class="fa fa-share-alt w3-hover-opacity fa-2x" onclick="fun_name();" ></i>
 
     
     
@@ -685,17 +685,7 @@
     <script> 
   function fun_name() 
   { 
-   cordova.plugins.codeplay_shareapk.isSupport(success, fail); 
-  } 
- 
-  function success(result) 
-  { 
-   alert(result); 
-  } 
- 
-  function fail(result) 
-  { 
-   alert(result); 
+   cordova.plugins.codeplay_shareapk.openShare() ;
   } 
  </script> 
  
