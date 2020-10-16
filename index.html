@@ -14,7 +14,47 @@
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
   <style>
-     
+     #news {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background:-webkit-linear-gradient(-135deg,magenta,gold);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 30px;
+  font-size: 17px;
+}
+
+#news.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.s, fadeout 30.5s 10.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
      
       html, body, .viewport img {
         width: 100%;
@@ -24,7 +64,53 @@
          
          
       }
+      
+       #snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background:-webkit-linear-gradient(-135deg,magenta,gold);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
       button{
+          
+          border-radius: 100px;
+      }
+      #button{
           
           border-radius: 100px;
       }
@@ -110,13 +196,14 @@
     
   </div>
 </div>
-     </div> 
+          
+     
 
 <!-- Content -->
 <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
 
-  <div class="w3-panel">
-    <div class="alert alert-danger" id="hover">
+  <div class="card">
+    <div class="alert alert-danger" id="news">
   
       <p><center><i class="fa fa-bell"></i>&nbsp;24th October <i class="fa fa-graduation-cap"></i>School Reopens</center></p>
     </div>
@@ -141,8 +228,15 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner card" role="listbox">
             <div class="item active">
+              <center>  <img src="images/admin%20umat.jpg" alt="Image" style="width:100%; height: 300px;"></center>
+                <div class="carousel-caption">
+                    <h3>Administration</h3>
+                  
+                </div>
+            </div>
+            <div class="item ">
               <center>  <img src="images/IMG_20200310_105250.jpg" alt="Image" style="width:100%; height: 300px;"></center>
                 <div class="carousel-caption">
                     <h3>UMaT</h3>
@@ -209,42 +303,58 @@
   
   <!-- Grid -->
   <div class="w3-row w3-container">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+    <div class=" w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16"><i class="fa fa-cog fa-3x "></i></span>
     </div>
-    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-      <h3><i class="fa fa-grav"></i>&nbsp;  Graphics</h3>
-      <p>We have specialised team of graphic designers who give out the best designs</p>
-    </div>
+   
 
-    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-      <h3><i class="fa fa-paint-brush"></i>&nbsp; Web Designing</h3>
-      <p>Get your blogging,personal and official website very responsive from our team</p>
+    <div class="card w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+      <h3>Coding<button onclick="window.location.href='#tsc';" class=" btn btn-amber" id="button"><i class="fa fa-code fa-3x"></i></button></h3><br>
+      <p>Free  coding courses for students</p>
     </div>
-
-    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-      <h3><i class="fa fa-cog"></i>&nbsp;Courses</h3><br>
-      <p> study courses for students &nbsp;<i class="fa fa-warning"></i></p>
+      <div class="card w3-col l3 m6 w3-blue w3-container w3-padding-16">
+      <h3><button onclick="news()" class=" btn btn-red" id="button"><i class="fa fa-bell-o fa-3x"></i></button>Updates</h3><br>
+        <p>just click on the bell button</p>
     </div>
-      <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-      <h3><i class="fa fa-cloud-upload"></i>&nbsp;Upload</h3><br>
-      <p> Get your app on the store  &nbsp;</p>
+      <div class="card w3-col l3 m6 w3-cyan w3-container w3-padding-16">
+      <h3><button onclick="window.location.href='mailto:tapstudios0@gmail.com?subject:lets build';" class=" btn btn-green" id="button"><i class="fa fa-envelope fa-3x"></i></button>Suggest</h3><br>
+        <p>help us build more apps</p>
     </div>
-
-    
+      <div class="card w3-col l3 m6 w3-grey w3-container w3-padding-16">
+      <h3><button onclick="myFunction()" class=" btn btn-primary" id="button"><i class="fa fa-android fa-3x"></i></button>Apps</h3><br>
+        <p>Apps available on store</p>
+    </div>
+   
   </div>
 
 
   <!-- Grid -->
   <div class="w3-row-padding" id="plans">
     <div class="w3-center w3-padding-64">
+        
+      
+
+<div id="snackbar">
+        <ul class="list-group">
+    <li class="list-group-item"><a href="#csumat">CSUMaT</a></li>
+    <li class="list-group-item"><a href="#umex">UMEX</a></li>
+    <li class="list-group-item"><a href="#aaenics">Aaenics</a></li>
+    <li class="list-group-item"> <a href="#covid"> Covid19 tracker</a></li>
+    <li class="list-group-item"> <a href="#tsc">Tap Studio Code</a></li>
+    <li class="list-group-item"> <a href="#dev">Devotional</a></li>
+    
+    </ul>
+        
+        </div>
+
+
       <h3>Apps</h3>
       <p>Download your school apps </p>
     </div>
 <div class="w3-container">
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/icons8-brains-64.png" style="width: 20%;" >CSUMaT</li>
+        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/icons8-brains-64.png" style="width: 20%;" id="csumat" >CSUMaT</li>
         <li class="w3-padding-16"><b>UMES PORTAL</b> </li>
         <li class="w3-padding-16"><b>UMaT VLE</b> </li>
         <li class="w3-padding-16"><b>CSUMaT Chat</b> </li>
@@ -268,7 +378,7 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner card" role="listbox">
             <div class="item active">
               <center>  <img src="images/csumat%20back.png" alt="Image" style="width: 200px; height: 300px;"></center>
                 <div class="carousel-caption">
@@ -320,7 +430,7 @@
           <span class="w3-opacity">Over view</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large" onclick="window.location.href='https://drive.google.com/file/d/1NIIoy2Ly00MfPbjXtCT2NXfhd4hil9RQ/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
+          <button class="btn btn-success" id ="button" onclick="window.location.href='https://drive.google.com/file/d/1NIIoy2Ly00MfPbjXtCT2NXfhd4hil9RQ/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
         </li>
       </ul>
     </div>
@@ -330,7 +440,7 @@
      
       <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/umex%20main%20logo.png" style="width: 20%;" >UMEX</li>
+        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/umex%20main%20logo.png" style="width: 20%;" id="umex" >UMEX</li>
         <li class="w3-padding-16"><b>Voting system</b> </li>
         <li class="w3-padding-16"><b>UMEX social</b> </li>
         <li class="w3-padding-16"><b>nomination </b></li>
@@ -354,7 +464,7 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner card" role="listbox">
             <div class="item active">
               <center>  <img src="images/umex%20back.png" alt="Image" style="width: 200px; height: 300px;"></center>
                 <div class="carousel-caption">
@@ -412,7 +522,7 @@
           <span class="w3-opacity">Over view</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large" onclick="window.location.href='https://drive.google.com/file/d/12GUXDuJw4iBb3Li-6zo1eIf30Yj9IlSV/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
+          <button class="btn btn-success"   id ="button" onclick="window.location.href='https://drive.google.com/file/d/12GUXDuJw4iBb3Li-6zo1eIf30Yj9IlSV/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
         </li>
       </ul>
     </div>
@@ -422,7 +532,7 @@
                
       <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/aanics.png" style="width: 20%;" >Aaenics</li>
+        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/aanics.png" style="width: 20%;" id="aaenics" >Aaenics</li>
         <li class="w3-padding-16"><b>Kit sales</b> </li>
         <li class="w3-padding-16"><b>Tutorial</b> </li>
         <li class="w3-padding-16"><b>Latest tech news</b></li>
@@ -446,7 +556,7 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner card" role="listbox">
             <div class="item active">
               <center>  <img src="images/Aanics%201.jpeg" alt="Image" style="width: 200px; height: 300px;"></center>
                 <div class="carousel-caption">
@@ -492,7 +602,7 @@
           <span class="w3-opacity">Over view</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large" onclick="window.location.href='https://drive.google.com/file/d/12GUXDuJw4iBb3Li-6zo1eIf30Yj9IlSV/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
+          <button class="btn btn-success" id ="button" onclick="window.location.href='https://drive.google.com/file/d/12GUXDuJw4iBb3Li-6zo1eIf30Yj9IlSV/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
         </li>
       </ul>
     </div>
@@ -501,7 +611,7 @@
       <div class="w3-container">
    <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/corona.png" style="width: 20%;" >Covid19 Tracker</li>
+        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/corona.png" style="width: 20%;" id="covid" >Covid19 Tracker</li>
         <li class="w3-padding-16"><b>Confirmed Cases</b></li>
         <li class="w3-padding-16"><b>Deaths,Recoveries</b> </li>
         <li class="w3-padding-16"><b>World wide</b></li>
@@ -525,7 +635,7 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner card" role="listbox">
             <div class="item active">
               <center>  <img src="images/corohome.png" alt="Image" style="width: 200px; height: 300px;"></center>
                 <div class="carousel-caption">
@@ -583,14 +693,14 @@
           <span class="w3-opacity">Over view</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large" onclick="window.location.href='https://drive.google.com/file/d/1w1bLJUSmX6Lryskm2oFWXA0Tl_ielyok/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
+          <button class="btn btn-success"  id ="button" onclick="window.location.href='https://drive.google.com/file/d/1w1bLJUSmX6Lryskm2oFWXA0Tl_ielyok/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
         </li>
       </ul>
     </div>
 <!---new--->
       <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/dela.png" style="width: 20%;" >Tap Studio Code</li>
+        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/dela.png" style="width: 20%;" id="tsc">Tap Studio Code</li>
         <li class="w3-padding-16"><b> Coding Courses </b></li>
         <li class="w3-padding-16"><b>Code playground</b> </li>
         <li class="w3-padding-16"><b>Chat system</b></li>
@@ -614,7 +724,7 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner card" role="listbox">
             <div class="item active">
               <center>  <img src="images/tl.png" alt="Image" style="width: 200px; height: 300px;"></center>
                 <div class="carousel-caption">
@@ -672,7 +782,7 @@
           <span class="w3-opacity">Over view</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large" onclick="window.location.href='https://drive.google.com/file/d/1Q1A4htExwCCDkmbSBCCQ_t68nxqz6OiQ/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
+          <button class="btn btn-success"  id ="button" onclick="window.location.href='https://drive.google.com/file/d/1Q1A4htExwCCDkmbSBCCQ_t68nxqz6OiQ/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
         </li>
       </ul>
     </div>
@@ -680,7 +790,7 @@
       <!---new--->
       <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/udf%20ico.png" style="width: 20%;" > Umat Devotional </li>
+        <li class="w3-black w3-xlarge w3-padding-32"><img src="images/udf%20ico.png" style="width: 20%;" id="dev" > Umat Devotional </li>
         <li class="w3-padding-16"><b> Daily Devotion </b></li>
         <li class="w3-padding-16"><b>Prayer</b> </li>
         <li class="w3-padding-16"><b>Teaching</b></li>
@@ -704,7 +814,7 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner card" role="listbox">
             <div class="item active">
               <center>  <img src="images/ufd%20back.png" alt="Image" style="width: 200px; height: 300px;"></center>
                 <div class="carousel-caption">
@@ -750,7 +860,7 @@
           <span class="w3-opacity">Over view</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large" onclick="window.location.href='https://drive.google.com/file/d/1opw6tKMAcMDeEn6q_1w8nX6QSREIDxku/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
+          <button class="btn btn-success"  id ="button" onclick="window.location.href='https://drive.google.com/file/d/1opw6tKMAcMDeEn6q_1w8nX6QSREIDxku/view?usp=sharing';"><i class="fa fa-download fa-2x">&nbsp;</i></button>
         </li>
       </ul>
     </div>
@@ -807,7 +917,7 @@
         <div class="w3-container">
           <h3> Akakpo Prince </h3>
           <p class="w3-opacity">Director</p>
-          <p>Renewable<br>
+          <p>Renewable  &emsp;&emsp;         
               Engineering</p>
           <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:princedeon18@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233202996959';" ><i class="fa fa-phone fa-2x"></i></button></p>
         </div>
@@ -870,7 +980,7 @@
         <div class="w3-container">
           <h3>Otoo Martha</h3>
           <p class="w3-opacity">Designer</p>
-          <p>Renewable <br> Engineering</p>
+          <p>Renewable &emsp;&emsp;Engineering</p>
           <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:otoomartha555@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233270920942';" ><i class="fa fa-phone fa-2x"></i></button></p>
         </div>
       </div>
@@ -904,7 +1014,7 @@
       </div></div>
   </div>
   </div>
-</div>
+ 
        
   <!-- Contact -->
  
@@ -940,7 +1050,7 @@
                />
            
           
-      </div></div>
+      </div></div></div></div>
   <!--  Scripts-->
  
     <script>
@@ -1023,6 +1133,20 @@ function showDivs(n) {
                          }, 0);
 
   	</script>
+    <script>
+function news() {
+  var x = document.getElementById("news");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+    <script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
 
 </body>
 </html>
