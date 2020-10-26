@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>uap</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="dir/w3.css">
+<link rel="stylesheet" href="dir/css.css">
+<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+        <link href="css/mdb.css" rel="stylesheet" type="text/css">
+<link href="css/" rel="stylesheet" type="text/css">
+ <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+  <style>
+     #news {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background:-webkit-linear-gradient(-135deg,magenta,gold);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 30px;
+  font-size: 17px;
+}
+
+#news.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.s, fadeout 30.5s 10.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+     
+      html, body, .viewport img {
+        width: 100%;
+        height: 100%; 
+        margin: 0;
+    
+         
+         
+      }
+      .card
+      {
+       background:-webkit-linear-gradient(-135deg,aqua,gold);    
+          
+      }
+      
+       #snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background:-webkit-linear-gradient(-135deg,magenta,gold);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+      button{
+          
+          border-radius: 100px;
+      }
+      #button{
+          
+          border-radius: 100px;
+      }
+      
+  
+      .flex-container {
+     
+       
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position:sticky;
+          object-position: center;
+           z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        
+    }
+    
+   .flex-item {
+       
+       background:-webkit-linear-gradient(-135deg,aqua,gold);
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+       background-size: cover;
+    }
+      #hover
+      {
+          color: white;
+           background:-webkit-linear-gradient(-135deg,aqua,gold);
+      }
+     
+    </style>
+</head>
+<body  >
+ 
+  <!--Your Main contents-->
+  <div id ="main" class=""> 
+      
+      
+      
+      
+      <div class="flex-container">
+      
+          
+     
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+               
+      
+  <!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Developers</span>
+    </div>
+<div class="w3-container">
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/delae.png" alt="dela" style="width:100%">
+        <div class="w3-container">
+          <h3> Eyram Dela</h3>
+          <p class="w3-opacity">Programmer</p>
+          <p>Computer Science </p>
+         <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:eyramdela2000@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233240576925';" ><i class="fa fa-phone fa-2x"></i></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/barnes.jpeg" alt="jay" style="width:100%">
+        <div class="w3-container">
+          <h3>John-Barnes </h3>
+          <p class="w3-opacity">Programmer</p>
+          <p>Computer Science </p>
+         <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:ohenesetwumasi@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233543288549';" ><i class="fa fa-phone fa-2x"></i></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/tinaa.jpeg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Ebbuah Martina </h3>
+          <p class="w3-opacity">programmer</p>
+          <p>Computer Science </p>
+          <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:efuwatina@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233249670536';" ><i class="fa fa-phone fa-2x"></i></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- new-->
+      <div class="w3-container">
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/deon.jpeg" alt="deon" style="width:100%">
+        <div class="w3-container">
+          <h3> Akakpo Prince </h3>
+          <p class="w3-opacity">Director</p>
+          <p>Renewable  &emsp;&emsp;         
+              Engineering</p>
+          <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:princedeon18@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233202996959';" ><i class="fa fa-phone fa-2x"></i></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/majeed.jpeg" alt="Majeed" style="width:100%">
+        <div class="w3-container">
+          <h3>Abdul Majeed</h3>
+          <p class="w3-opacity">Organizer</p>
+          <p>Computer Science </p>
+         <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:abdulmajeedosman01@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233556661092';" ><i class="fa fa-phone fa-2x"></i></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/vanessa.jpg" alt="vane" style="width:100%">
+        <div class="w3-container">
+          <h3> Vanessa</h3>
+          <p class="w3-opacity">Database administrator</p>
+          <p>Computer Science </p>
+         <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:vanessaohenewaa18@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233547024315';" ><i class="fa fa-phone fa-2x"></i></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- new-->
+      <div class="w3-container">
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/kg.jpg" alt="kg" style="width:100%">
+        <div class="w3-container">
+          <h3>Gyasi Kofi</h3>
+          <p class="w3-opacity">Social Administrator</p>
+          <p>Computer Science </p>
+          <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:kaygyasi715@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233557833216';" ><i class="fa fa-phone fa-2x"></i></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/addae.jpg" alt="kof" style="width:100%">
+        <div class="w3-container">
+          <h3>Addae Koffi</h3>
+          <p class="w3-opacity">Graphics designer</p>
+          <p>Computer Science </p>
+         <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:kofiangoah22@gmail';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233554860725';" ><i class="fa fa-phone fa-2x"></i></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/martha.jpeg" alt="om" style="width:100%">
+        <div class="w3-container">
+          <h3>Otoo Martha</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Renewable &emsp;&emsp;Engineering</p>
+          <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:otoomartha555@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233270920942';" ><i class="fa fa-phone fa-2x"></i></button></p>
+        </div>
+      </div>
+    </div>
+          <!-------new------->
+          <div class="w3-card-4" >
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/yasmin.jpeg" alt="yt" style="width:100%">
+        <div class="w3-container">
+          <h3>Yasmin Fugar</h3>
+          <p class="w3-opacity">Blogger</p>
+          <p>Computer Science </p>
+         <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:yasminfugar18@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233557721192';" ><i class="fa fa-phone fa-2x"></i></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/maureen.jpeg" alt="jay" style="width:100%">
+        <div class="w3-container">
+          <h3> Maureen Peprah</h3>
+          <p class="w3-opacity">Communist</p>
+          <p>Computer Science </p>
+            <p><button class="btn btn-danger w3-light-grey" onclick="window.location.href='mailto:emeraldewurama@gmail.com';"><i class="fa fa-envelope-o fa-2x">&nbsp;</i></button>&emsp;<button class="btn btn-primary" onclick="window.location.href='tel:+233545037221';" ><i class="fa fa-phone fa-2x"></i></button></p>
+        </div>
+      </div>
+    </div>
+</div>
+      </div></div>
+  </div>
+  </div>
+ 
+       
+  <!-- Contact -->
+ 
+
+ 
+
+<!-- Footer -->
+
+
+<div id="splash"  class="flex-container" 
+        style ="background:-webkit-linear-gradient(-135deg,gold,aqua); display: none"  >
+    
+     <!--Center align Splash contents in all screen sizes-->
+         <div class ="flex-item" >
+          <img src="images/tap%20new.jpeg" 
+               alt="app_icon" 
+               style="width:60%; top:1; "
+               />
+           
+          
+      </div></div></div></div>
+  <!--  Scripts-->
+ 
+    <script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+     <script type="text/javascript">
+    
+    function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+          
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
+
+    setTimeout(function(){ 
+          
+             if(typeof(Storage) !== "undefined") {
+         
+              console.log("Already shown" +sessionStorage.getItem('spalashShown'));
+
+               if( !sessionStorage.getItem('spalashShown') || sessionStorage.getItem('spalashShown') === null ) {  
+                 
+               document.getElementById('splash') .style.display = 'inline';
+
+                //Display splash
+                setTimeout(function(){   
+
+                 fade(document.getElementById('splash'));
+                  // document.getElementById('splash') .style.display = 'none'
+                   // window.location = "http://hiteshsahu.com";
+                  
+                 sessionStorage.setItem('spalashShown', true  );
+              }
+               , 3000);
+      
+                  } else {
+                    
+                     //Display Main Content
+                      document.getElementById('splash') .style.display = 'none'
+                        console.log("Already shown");
+                     }
+                  }
+         
+                else {
+                        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                      }
+                         }, 0);
+
+  	</script>
+    <script>
+function news() {
+  var x = document.getElementById("news");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+    <script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+
+</body>
+</html>
