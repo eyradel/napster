@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="play store clone.css">
      <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body class="container">
     <nav class="nav nav-extended">
@@ -18,67 +19,248 @@
     </nav>
    <center><div class="row game-info">
         <div class="app-image"><img src="images/umex%20main%20logo.png"></div>
-        
+        <br>
         <div>UMEX App<br>
-        <a  class="publisher" >Team UMEX</a><br>
+        <a class="publisher" >I.B.O.Y</a><br>
         <span>Contains no ads.No In-app Purchases</span>
         </div>
     
 
     <div class="logo">
         <span>4.3 &#9733;<br>7 reviews</span>
-        <span class="fa fa-signal"><br>8.94 mb</span>
+        <span class="fa fa-signal"><br>8.59mb</span>
 
-        <span>10+<br>Downloads</span>
+        <span>5+<br>Downloads</span>
     </div></div></center> <br><br><br><br>
 
     <a href="https://drive.google.com/file/d/12GUXDuJw4iBb3Li-6zo1eIf30Yj9IlSV/view?usp=sharing"><div class="install"><i class="fa fa-download"></i></div></a>
 
     <div class="game-pics">
-        <img src="images/umex%202.png" alt="">
-        <img src="images/umex%20back.png" alt="">
-        <img src="images/umex%20social.png" alt="">
-        <img src="images/umex%20stat%201.png" alt="">
-        <img src="images/umex%20stat.png" alt="">
-        <img src="images/umex%20team%201.png" alt="">
-        <img src="images/pool.png" alt="">
-        <img src="images/umex%20main%20logo.png" alt="">
+        <img src="images/umex%202.png" alt="" id="myImg">
+        <img src="images/umex%20main%20logo.png" alt=""  id="myImg1">
+        <img src="images/umex%20stat%201.png" alt="" id="myImg2">
+        <img src="images/umex%20social.png" alt="" id="myImg3">
+       
         
     </div>
 
     <div class="heading">
         About This App &#8594;
     </div>
-    <div class="description">This app is developed by Team Umex to help students during entertainment period </div>
+    <div class="description">This App was developed by a team of three programmers all from CSE department  </div>
 
     <div class="heading">Ratings and reviews &#8594;</div>
     <div class="rate">4.2</div>
     <div class="stars">&#9733;&#9733;&#9733;&#9733;<br>Unknown</div><br><hr>
 
     <div class="comments">
-        <img src="images/maureen.jpeg" width="60">&nbsp; <br><br>Maureen<br><br><br>
+        <img src="images/Dr%20Crack%2020200704_072847.jpg" width="60">&nbsp; <br><br>Dr Crack<br><br><br>
         <div class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <div class="content">wow live video streaming i cant believe it</div><br><br>
-        <img src="images/yasmin.jpeg" width="60">&nbsp; <br><br>Yasmin <br><br><br>
+        <div class="content"> cool</div><br><br>
+        <img src="images/delae.png" width="60">&nbsp; <br><br>Eyram<br><br><br>
         <div class="star">&#9733;&#9733;&#9733;&#9733;<i class="fa fa-star-o"></i></div>
         <div class="content">i love the app</div><br><br>
     </div><hr>
     <p>More Apps -</p>
-    <div class="card more-apps">
+    <div class="container more-apps">
         <div class="oth-games">
-            <div class="card"><center><img src="images/corona.png" onclick="window.location.href='cov.html';"><br><a  >Covid-19 Tracker</a></center></div>
+            <div class="card"><center><img src="images/corona.png" onclick="window.location.href='dev.html';"><br><p>Covid-19 Tracker</p></center></div>
             
             
-            <div class="card"><center><img src="images/aanics.png" onclick="window.location.href='aaenics.html';"><br><a >Aaenics Community</a></center></div>
-            <div class="card"><center><img src="images/dela.png" onclick="window.location.href='tsc.html';"><br><a  >Tap Studio Code</a></center></div>
-            <div class="card"><center><img src="images/udf%20ico.png" onclick="window.location.href='dev.html';"><br><a  >UMat Fids Devotional</a></center></div>
-            <div class="card"><center><img src="images/icons8-brains-64.png" onclick="window.location.href='csu.html';"><br><a  >CSUMaT&nbsp;&nbsp;&nbsp; App</a></center></div>
-            <div class="card"><center><img src="images/wc%20main%20logo.png" onclick="window.location.href='wc.html';"> <br><a  >WeatherCast</a></center></div>
-             <div class="card"><center><img src="images/cwa.png" onclick="window.location.href='cwa.html';"> <br><a  >Grade Calculator</a></center></div>
-             <div class="card"><center><img src="images/crushy.png" onclick="window.location.href='crushy.html';"> <br><a  >Crushy</a></center></div>
+             <div class="card"><center><img src="images/umex%20main%20logo.png" onclick="window.location.href='umex.html';"><br><p>UMEX APP</p></center></div>
+            <div class="card"><center><img src="images/dela.png" onclick="window.location.href='tsc.html';"><br><p>Tap Studio Code</p></center></div>
+            <div class="card"><center><img src="images/udf%20ico.png" onclick="window.location.href='dev.html';"><br><p>UMat Fids Devotional</p></center></div>
+            <div class="card"><center><img src="images/icons8-brains-64.png" onclick="window.location.href='csu.html';"><br><p>CSUMaT&nbsp;&nbsp;&nbsp; App</p></center></div>
+            <div class="card"><center><img src="images/aanics.png" onclick="window.location.href='aaenics.html';"><br><p> Aaenics</p></center></div>
+             <div class="card"><center><img src="images/cwa.png" onclick="window.location.href='cwa.html';"> <br><p>Grade Calculator</p></center></div>
+             <div class="card"><center><img src="images/crushy.png" onclick="window.location.href='crushy.html';"> <br><p>Crushy</p></center></div>
+            <div class="card"><center><img src="images/wc%20main%20logo.png" onclick="window.location.href='wc.html';"> <br><p>WeCast</p></center></div>
         </div></div>
-<style>    margin-bottom: 30px;
+    <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+    <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
 }
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+     <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg1");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+     <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg2");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+     <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg3");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+     <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg4");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+     <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg5");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+     <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg6");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+     <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg6");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<style> 
+    margin-bottom: 30px;
+}
+    
 
 .app-image {
     height: 100px;
@@ -90,7 +272,7 @@
     width: 70px;
     border-radius: 20px;
     float: left;
-   
+    
 }
 
 .game-info div {
@@ -208,7 +390,7 @@ a {
 
 .more-apps {
     color: #fff;
-    background: -webkit-linear-gradient(-135deg,lavender,gold);
+    background: white;
     width: 100%;
 }
 
@@ -240,8 +422,98 @@ a {
 }
 
 p {
-    font-size: 20px;
+    color: black;
     font-family: sans-serif;
-}</style>
+}
+    .card{
+    border-radius: 50px;
+    }
+    
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+    </style>
 </body>
 </html>
