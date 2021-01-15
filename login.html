@@ -1,0 +1,224 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+<link rel="stylesheet" href="css/bootstrap.css">
+   
+  
+    
+
+    <!-- Custom styles for this template -->
+    
+ 
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+  <style>
+     
+     
+      html, body, .viewport img {
+        width: 100%;
+        height: 100%; 
+        margin: 0;
+    
+         
+         
+      }
+      
+  
+      .flex-container {
+     
+       
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: absolute;
+          object-position: center;
+           z-index: 
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        
+    }
+    
+   .flex-item {
+       
+       background:-webkit-linear-gradient(-135deg,aqua,gold);
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+       background-size: cover;
+    }
+      
+     
+    </style>
+</head>
+<body>
+ 
+  <!--Your Main contents-->
+  <div id ="main" class=""> 
+      
+      
+      
+      
+    <div class="flex-container">
+    
+     </div> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <center>
+        
+             
+                  <div class="card-header">UFD Admin Login<br> <div class="card-title"><img src="images/splash.png" width="100"></div></div>
+                   <div class="card-body">
+                      <br>
+                       <form class="col-xl-2" action="admin.html" method="post">
+                       <span class="badge-pill"><i class="fa fa-user-secret fa-3x"></i></span>
+          <input type="text" name="username" placeholder="Username" class="form-control"><br><br>
+          <span class="badge-pill"><i class="fa fa-key fa-3x"></i></span>
+        <input type="text" name="password" placeholder=" Password" class="form-control"><br><br><br>
+                          
+                           <button class="btn btn-primary btn-lg"><i class="fa fa-power-off fa-2x" name="submit" ></i></button>
+                           </form>
+                     
+      
+      
+      
+      
+      </div>
+      <div class="card-footer"></div>
+</center>
+
+    
+ 
+
+
+
+  <!--Your Splash Screen-->
+  <div id="splash"  class="flex-container" 
+        style ="background:-webkit-linear-gradient(-135deg,aqua,gold); display: none"  >
+    
+     <!--Center align Splash contents in all screen sizes-->
+         <div class ="flex-item" >
+          <center>  <img src="images/splash.png" 
+               alt="app_icon" 
+               style="width:40%; top:1; "
+               /><br><br>
+           <p> UMaT FIDS DEVOTIONAL</p></center>
+           
+          
+      </div></div>
+
+       
+  <!--  Scripts-->
+ <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+     <script type="text/javascript">
+    
+    function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+          
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
+
+    setTimeout(function(){ 
+          
+             if(typeof(Storage) !== "undefined") {
+         
+              console.log("Already shown" +sessionStorage.getItem('spalashShown'));
+
+               if( !sessionStorage.getItem('spalashShown') || sessionStorage.getItem('spalashShown') === null ) {  
+                 
+               document.getElementById('splash') .style.display = 'inline';
+
+                //Display splash
+                setTimeout(function(){   
+
+                 fade(document.getElementById('splash'));
+                  // document.getElementById('splash') .style.display = 'none'
+                   // window.location = "http://hiteshsahu.com";
+                  
+                 sessionStorage.setItem('spalashShown', true  );
+              }
+               , 3000);
+      
+                  } else {
+                    
+                     //Display Main Content
+                      document.getElementById('splash') .style.display = 'none'
+                        console.log("Already shown");
+                     }
+                  }
+         
+                else {
+                        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                      }
+                         }, 0);
+
+  	</script>
+    </body>
+</html>

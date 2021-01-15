@@ -1,202 +1,202 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta charset="utf-8">
+<html lang="en">
+  <head>
+    <title>Ustore</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  
-    <link rel="stylesheet" href="css/mdb.css">
- <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+    
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/popper.min.js"></script>
-<style>
-    #snackbar {
-  visibility: hidden;
-  min-width: 290px;
-  margin-left: -125px;
-  background:-webkit-linear-gradient(-335deg,aqua,violet);;
-  color: #fff;
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 600px;
-        height: 80px;
-  font-size: 17px;
-        top: 50px;
-}
-
-#snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;} 
- 
-}
-
-@keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-
-}
-
-@-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;} 
- 
-}
-
-@keyframes fadeout {
-  
- 
-}
-* {box-sizing: border-box}
-
-/* Set height of body and the document to 100% */
-body, html {
- 
-  margin: 0;
-  font-family: Arial;
-    background:-webkit-linear-gradient(-135deg,violet,aqua);
-}
-
-/* Style tab links */
-.tablink {
-  background:-webkit-linear-gradient(-135deg,magenta,gold);
-  color: white;
-  float:left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+      <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+     <link rel="stylesheet" href="css/mdb.css">
+    
+    
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   
    
-}
-    .fa
-    {
-       color: black;
-    }
 
-.tablink:hover {
-  background: -webkit-linear-gradient(-135deg,aqua,gold);
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  height:800px;
-    
-}
-
-#Home {background:-webkit-linear-gradient(-135deg,aqua,purple);}
-#apps {background: -webkit-linear-gradient(-135deg,aqua,purple);}
-#Contact {background: -webkit-linear-gradient(-135deg,violet,aqua);}
-#About {background: -webkit-linear-gradient(-135deg,aqua,gold);}
-    
-    button{
-        padding: 5px;
+    <link rel="stylesheet" href="css/style.css">
+    <style>
         
-    }
-    /* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
+           margin-bottom: 30px;
+}
+    
+
+.app-image {
+    height: 100px;
+    width: 75px;
+}
+
+.app-image img {
+    height: 65px;
+    width: 70px;
+    float: left;
+    
+}
+
+.game-info div {
+    display: inline-block;
+    font-size: 23px;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+.publisher {
+    font-size: 14px;
+    font-family: verdana;
+    color: #33691e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.game-info span {
+    font-size: 14px;
+    color: #737373;
+    display:inline-block ;
+}
+
+.logo span {
+    height: 40px;
+    width: 90px;
+    display: inline-block;
+    float: left;
+    border-right: 1px solid grey;
+    margin-left: 10px;
+}
+
+.box {
+    border: 1.5px solid black;
+}
+
+.install {
+    background-color: green;
+    color: #fff;
+    font-size: 18px;
+    font-family: verdana;
+    padding: 8px;
+    text-align: center;
+    
+    width: 90%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.game-pics {
+    margin-top: 25px;
+    margin-left: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.game-pics::-webkit-scrollbar {
+    display: none;
+}
+
+.game-pics img {
+    
+    height: 160px;
+    display: inline-block;
+    margin: 3px;
+}
+
+.heading {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.description {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: #424242;
+}
+
+.rate {
+    font-size: 70px;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+
+.stars {
+    font-size: 20px;
+    margin-left: 58px;
+    color: green;
+}
+
+.comments {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.comments img {
+    border-radius: 30px;
+    float: left;
+}
+
+.star {
+    color: green;
+}
+
+.content {
+    margin-left: 15px;
+    color: #555555;
+}
+
+.more-apps {
+    color: #fff;
+    background: white;
+    width: 100%;
+}
+
+.oth-games img {
+    height: 100px;
+    width: 100px;
+    
    
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 110%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  font-size: 17px;
+.oth-games div {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+    margin-top: 10px;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.oth-games a {
+    color: white;
 }
 
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
+.oth-games {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
-/* Style the tab content */
-.tabcont {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 513px;
-  display: none;
+.oth-games::-webkit-scrollbar {
+    display: none;
 }
 
-/* Clear floats after the tab */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+p {
+    color: black;
+    font-family: sans-serif;
 }
-    .flip-card {
-            background-color: transparent;
-            width: 300px;
-            height: 300px;
-            perspective: 1000px;
-        }
-
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front,
-        .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-
-        .flip-card-front {
-            background-color: #bbb;
-            color: black;
-        }
-
-        .flip-card-back {
-            background: -webkit-linear-gradient(135deg, #c850c0, #4158d0);
-            color: white;
-            transform: rotateY(180deg);
-        }
-    .flex-container {
+    .card{
+    border-radius: 10px;
+        background: -webkit-linear-gradient(-135deg,lavender,ghostwhite);
+    }
+        
+        
+        .flex-container {
      
        
         -webkit-box-align: center;
@@ -209,19 +209,22 @@ body, html {
         -moz-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-       
+   position: relative;
           object-position: center;
-           
+           z-index: 1;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         
     }
+        .btn{
+            border-radius: 100px;
+}
     
    .flex-item {
        
-       background:-webkit-linear-gradient(-235deg,violet,aqua);
+       background:-webkit-linear-gradient(-135deg,lavender,ghostwhite);
         display: -moz-box;
         display: -ms-flexbox;
         display: flex;
@@ -239,366 +242,250 @@ body, html {
         top: 0;
         right: 0;
         bottom: 0;
-       z-index: 1;
         left: 0;
        background-size: cover;
     }
-</style>
-</head>
-<body class="card">
-<div id ="main" class=""> 
+      </style>
+  </head>
+  <body style="overflow-x: hidden;">
+  <div id ="main" class=""> 
       
       
       
       
-      <div class="flex-container">
-          <nav>
+    <div class="flex-container">
+  <div class="site-wrap">
 
-<button class="tablink" onclick="openPage('Home', this, '-webkit-linear-gradient(-135deg,aqua,gold)')" id="defaultOpen"><i class="fa fa-home fa-2x"></i></button>
-<button class="tablink" onclick="openPage('apps', this, '-webkit-linear-gradient(-135deg,yellow,purple)')" ><i class="fa fa-android fa-2x"></i></button>
-<button class="tablink" onclick="openPage('Contact', this, '-webkit-linear-gradient(-135deg,white,laveder)')"><i class="fa fa-signal fa-2x"></i></button>
-<button class="tablink" onclick="openPage('About', this, '-webkit-linear-gradient(-135deg,violet,gold)')"><i class="fa fa-chain fa-2x"></i></button>
-    <!---notification--></nav>
-          <div id="snackbar" class="container"><i class="fa fa-bell-o"></i>University Reopens Next Year</div>
-       
-<div id="Home" class="tabcontent">
-    <center>
-    
-  
-  <!-- Grid -->
-        <br>
-    
-    </center>
-   
-    <center>
-  <br> <br> <br>
-<i class="fa fa-cog fa-spin fa-5x" ></i>
-     <div class="card">
-        <div class="container">
-            <h5><button class="btn btn-info " onclick="myFunction()"><i class="fa fa-bell " ></i></button></h5>
-        <p>Click to show notifications</p>
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
-        <div class="container" style=" background:-webkit-linear-gradient(orange,gold);">
-            <h5 ><button class="btn btn-danger " onclick="window.location.href='https://drive.google.com/file/d/1Q1A4htExwCCDkmbSBCCQ_t68nxqz6OiQ/view?usp=sharing';"><i class="fa fa-code" ></i></button></h5>
-        <p>Tap Studio Code App</p>
-        </div>
-         <div class="container" style="background: -webkit-linear-gradient(-135deg,aqua,magenta)">
-            <h5 ><button class="btn btn-success " onclick="window.location.href='mailto:tapstudios0@gmail.com?subject = lets build = Message';"><i class="fa fa-envelope" ></i></button></h5>
-             
-        <p>Help us develop more apps</p>
-        </div>
-        </div></center>
-          
-          </div>
-
-<!--apps--->
-<div id="apps" class="tabcontent">
-  <div class="tab">
-  <button class="tabli" onmouseover="openTab(event, 'dev')">Devotional</button>
-  <button class="tabli" onmouseover="openTab(event, 'tsc')">Studio Code</button>
-  <button class="tabli" onmouseover="openTab(event, 'C9T')">C9T</button>
-       <button class="tabli" onmouseover="openTab(event, 'Aaenics')">Aaenics</button>
-       <button class="tabli" onmouseover="openTab(event, 'CSUMaT')">CSUMaT</button>
-      <button class="tabli" onmouseover="openTab(event, 'UMEX')">UMEX</button>
-      <button class="tabli" onmouseover="openTab(event, 'wc')">WeCast</button>
-       <button class="tabli" onmouseover="openTab(event, 'cwa')">Grade Calc</button>
-       <button class="tabli" onmouseover="openTab(event, 'crushy')">crushy</button>
-      <button class="tabli" onmouseover="openTab(event, 'flames')">Flames</button>
-</div>
-<center>
-<div id="dev" class="card tabcont">
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
     
-  <h3>UMaT Fids Devotional</h3>
-  <p>UFD is a gospel sharing app</p>
-    <img src="images/ufd%20systems.png" width="200px"><br>
-    <button class="btn btn-info" onclick="window.location.href='dev.html';" style="border-radius: 100px;" >Info</button>
-        
-    </div></center>
-<center>
-<div id="tsc" class=" card tabcont">
- <h3>Tap Studio Code</h3>
-  <p>Codeplay ground for learners</p>
-    <img src="images/tsg.png" width="200px"><br>
-    <button class="btn btn-info" style="border-radius: 100px;"  onclick="window.location.href='tsc.html';">Info</button>
-</div>
-    </center>
-    <center>
-<div id="C9T" class="card tabcont">
-  <h3>Covid-19  Tracker</h3>
-  <p>Track Covid-19 World-wide</p>
-    <img src="images/cor.png" width="200px"><br>
-    <button class="btn btn-info" style="border-radius: 100px;"  onclick="window.location.href='cov.html';">Info</button>
-        </div></center>
-    <center>
-    <div id="Aaenics" class="card tabcont">
-  <h3>Aaenics Community</h3>
-  <p>Code Robots Today</p>
-    <img src="images/Aanics%202.jpeg" width="200px"><br>
-    <button class="btn btn-info" style="border-radius: 100px;"  onclick="window.location.href='aaenics.html';">Info</button>
-        </div></center>
-    <center>
-    <div id="CSUMaT" class="card tabcont">
-  <h3>CSUMaT</h3>
-  <p>Listen to your pdf in audio format</p>
-    <img src="images/csumat%20home%20bar.png" width="200px"><br>
-    <button class="btn btn-info" style="border-radius: 100px;"  onclick="window.location.href='csu.html';">Info</button>
-        </div></center>
-    <center>
- <div id="UMEX" class="card tabcont">
-  <h3>UMEX</h3>
-  <p>Entertainment</p>
-    <img src="images/umex%20stat%201.png" width="200px"><br>
-    <button class="btn btn-info" style="border-radius: 100px;"  onclick="window.location.href='umex.html';">Info</button>
-        </div></center>
-    <center>
-    <div id="wc" class="card tabcont">
-  <h3>WeatherCast</h3>
-  <p>Weather</p>
-    <img src="images/wc2.png" width="200px"><br>
-    <button class="btn btn-info" style="border-radius: 100px;"  onclick="window.location.href='wc.html';">Info</button>
-        </div></center>
-    <center>
-    <div id="cwa" class="card tabcont">
-  <h3>Grade Calculator</h3>
-  <p>Calculate tour GPA and CWA</p>
-    <img src="images/cwa2.png" width="200px"><br>
-    <button class="btn btn-info" style="border-radius: 100px;"  onclick="window.location.href='cwa.html';">Info</button>
-        </div></center>
-    <center>
-    <div id="crushy" class="card tabcont">
-  <h3>Crushy</h3>
-  <p>Love Meter</p>
-    <img src="images/cr2.png" width="200px">
-        <br>
-    <button class="btn btn-info" style="border-radius: 100px;"  onclick="window.location.href='crushy.html';">Info</button>
-        </div></center>
-    <center>
-<div id="flames" class="card tabcont">
     
-  <h3>Flames App</h3>
-  <p>Love Calculator app</p>
-    <img src="images/fl2.png" width="200px"><br>
-    <button class="btn btn-info" onclick="window.location.href='fl.html';" style="border-radius: 100px;" >Info</button>
-        
-    </div></center>
-<div class="clearfix"></div>
-
-</div>
-<!--contact--->
-<div id="Contact" class="tabcontent">
-   <center> <h2>Developers</h2>
-       <h3>Tap On The Image</h3>
-    <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/tap%20new.jpeg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Tap Studio GH</h1>
-                        <p>Developers<i class="fa fa-laptop"></i></p>
-                        
-                        <button onclick="window.location.href='mailto:tapstudios0@gmail.com?subject:lets build';" class="btn btn-danger" style="border-radius: 100px;"><i class="fa fa-envelope fa-2x"></i></button>
-
-                        <button onclick="window.location.href='tel:+233540202096';" style="border-radius: 100px;"  class="btn btn-info "id="my"><i class="fa fa-phone fa-2x" style="border-radius: 100px;"></i> </button><br>
-                        <button class="btn btn-success" style="border-radius: 100px;"  onclick="window.location.href='team.html';"><i class="fa fa-paint-brush fa-2x"></i></button>
-
-
-                    </div>
-                </div>
-        
-            </div>
-       
+    <div class="site-navbar-wrap js-site-navbar bg-white">
       
-    </center>
-    
-</div>
-<!--about--page--->
-<div id="About" class="tabcontent">
-    <center>
- <div id="div1" class="fa  fa-5x"></div>
-        <br>
-    <div class="container">
- 
-     <div class="container" >
-    <div class="display-container mySlides" >
-       <div id="myCarousel" class="carousel slide" data-ride="carousel"  >
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-<!--
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
--->
-          
+      <div class="container">
+        <div class="site-navbar bg-light">
+          <div class="py-1">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <h2 class="mb-0 site-logo"><a href=""><img src="images/ustore.png" width="90"></a></h2>
+              </div>
+              <div class="col-10">
+                <nav class="site-navigation text-right" role="navigation">
+                  <div class="container">
+                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3" ></span></a></div>
 
+                    <ul class="site-menu js-clone-nav d-none d-lg-block">
+                      <li class="active">
+                        <a href="index.html"><i class="fa fa-home"></i>&nbsp;Home</a>
+                      </li>
+                        <li><a   data-toggle="modal" data-target="#myModal"><i class="fa fa-bell">&nbsp;</i>Notifications</a></li>
+                      <li class="has-children">
+                        <a class="active"><i class="fa fa-cog fa-spin"></i>&nbsp;Works</a>
+                        <ul class="dropdown arrow-top">
+                         <li><a href="beliefs.html">Web</a></li>
+                              <li><a href="beliefs.html">Androdev</a></li>
+                              <li><a href="beliefs.html">Windev</a></li>
+                             
+                         
 
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner card" role="listbox" style="height:280px" >
-            <div class="item active">
-              <center>  <img src="images/admin%20umat.jpg" alt="Image" style="width:100%; height: 300px;"></center>
-                <div class="carousel-caption">
-                    <h3>Administration</h3>
-                  
-                </div>
-            </div>
-            <div class="item ">
-              <center>  <img src="images/IMG_20200310_105250.jpg" alt="Image" style="width:100%; height: 300px;"></center>
-                <div class="carousel-caption">
-                    <h3>UMaT</h3>
-                  
-                </div>
-            </div>
-
-            <div class="item">
-                <center>  <img src="images/tap%20new.jpeg" alt="Image" style="width:100%; height: 300px;"></center>
-                <div class="carousel-caption">
-                    <h3>Tap Studio Ghana</h3>
-                   
-                   
-                </div>
-
-            </div>
-            <div class="item">
-                <center>  <img src="images/dela.png" alt="Image" style="width: 100%x; height: 300px;"></center>
-                <div class="carousel-caption">
-                    <h3>Tap studio code</h3>
-                   
-                </div>
-            </div>
-            <div class="item">
-                <center>   <img src="images/icons8-brains-64.png" alt="Image" style="width: 200px; height: 300px;"></center>
-                <div class="carousel-caption">
-                    <h3>CSUMaT</h3>
-              
-                </div>
-            </div> 
-            <div class="item">
-                <center>    <img src="images/umex%20main%20logo.png" alt="Image" style="width: 200px; height: 300px;"></center>
-                <div class="carousel-caption">
-                    <h3>UMEX</h3>
+                        </ul>
+                      </li>
+                    
+                      <li><a href="team.html"><i class="fa fa-binoculars"></i>&nbsp;About</a></li>
                  
-                </div>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
             </div>
-             
-
+          </div>
         </div>
-
-      
+      </div>
     </div>
-
-    </div>
-    
-    
-
-    <!-- Slideshow next/previous buttons -->
-    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+ 
+   
+        </div></div><br><br><br><br><br><br>
+      <div style="height: 10px;"></div>
+      <div class="col">
+   <P>  <img src="images/icons8_android.ico" width="50px;">&nbsp;APPS</P>
      
-    
-      <div class="w3-center">
-        <i class="fa fa-laptop"></i>
+         
+      
+ <div class="oth-games">
+            <div class="card"><center><img src="images/corona.png" onclick="window.location.href='cov.html';"><br><p>Covid-19 Tracker</p></center></div>
+            
+            <div class="card"><center><img src="images/icons8_code_file_510px.png" onclick="window.location.href='webcode.html';"><br><p>WebCode&nbsp; App</p></center></div>
+             <div class="card"><center><img src="images/icons8_game_pool_512px.png" onclick="window.location.href='sn.html';"><br><p> Snooker</p></center></div>
+             <div class="card"><center><img src="images/umex%20main%20logo.png" onclick="window.location.href='umex.html';"><br><p>UMEX APP</p></center></div>
+            <div class="card"><center><img src="images/dela.png" onclick="window.location.href='tsc.html';"><br><p>Tap Studio Code</p></center></div>
+            <div class="card"><center><img src="images/udf%20ico.png" onclick="window.location.href='dev.html';"><br><p>UMat Fids Devotional</p></center></div>
+               <div class="card"><center><img src="images/aanics.png" onclick="window.location.href='aaenics.html';"><br><p> Aaenics</p></center></div>
+            <div class="card"><center><img src="images/fl1.png" onclick="window.location.href='fl.html';"><br><p> Flames App</p></center></div>
+             <div class="card"><center><img src="images/cwa.png" onclick="window.location.href='cwa.html';"> <br><p>Grade Calculator</p></center></div>
+             <div class="card"><center><img src="images/crushy.png" onclick="window.location.href='crushy.html';"> <br><p>Crushy</p></center></div>
+            <div class="card"><center><img src="images/wc%20main%20logo.png" onclick="window.location.href='wc.html';"> <br><p>WeCast</p></center></div>
+     
+        </div>
+      
+      </div>
+      
+      
+      
+      <br><br>
+      <div class="col">  <p><img src="images/icons8_musically_3.ico" width="50px;" >&nbsp;Social</p>
+      <div class="oth-games">
+        
+           
+            
+            
+             <div class="card"><center><img src="images/umex%20main%20logo.png" onclick="window.location.href='umex.html';"><br><p>UMEX APP</p></center></div>
+            <div class="card"><center><img src="images/dela.png" onclick="window.location.href='tsc.html';"><br><p>Tap Studio Code</p></center></div>
+            <div class="card"><center><img src="images/udf%20ico.png" onclick="window.location.href='dev.html';"><br><p>UMat Fids Devotional</p></center></div>
+               <div class="card"><center><img src="images/aanics.png" onclick="window.location.href='aaenics.html';"><br><p> Aaenics</p></center></div>
+            <div class="card"><center><img src="images/fl1.png" onclick="window.location.href='fl.html';"><br><p> Flames App</p></center></div>
+             <div class="card"><center><img src="images/crushy.png" onclick="window.location.href='crushy.html';"> <br><p>Crushy</p></center></div>
+        
+     
+        </div>
+      
+      </div>
+      <div class="col">  <p><img src="images/icons8_game_controller.ico" width="50px;" >&nbsp;Games</p>
+      <div class="oth-games">
+        
+           
+            
+            
+            
+            <div class="card"><center><img src="images/dela.png" onclick="window.location.href='tsc.html';"><br><p>Tap Studio Code</p></center></div>
+           
+                <div class="card"><center><img src="images/icons8_game_pool_512px.png" onclick="window.location.href='sn.html';"><br><p>Snooker</p></center></div>
+           
+            <div class="card"><center><img src="images/fl1.png" onclick="window.location.href='fl.html';"><br><p> Flames App</p></center></div>
+             <div class="card"><center><img src="images/crushy.png" onclick="window.location.href='crushy.html';"> <br><p>Crushy</p></center></div>
+        
+     
+        </div>
+      
+      </div>
+       <div class="col">  <p><img src="images/icons8_code.ico" width="50px;" >&nbsp;Coding</p>
+      <div class="oth-games">
+        
+           
+            
+            
+             
+            <div class="card"><center><img src="images/dela.png" onclick="window.location.href='tsc.html';"><br><p>Tap Studio Code</p></center></div>
+           
+               
+          <div class="card"><center><img src="images/icons8_code_file_510px.png" onclick="window.location.href='webcode.html';"><br><p>Webcode</p></center></div>
+           
+     
+        </div>
+      
+      </div>
+      <div class="col">  <p><img src="images/icons8_rfid_signal.ico" width="50px;" >&nbsp;Trackers</p>
+      <div class="oth-games">
+        
+           
+            <div class="card"><center><img src="images/corona.png" onclick="window.location.href='cov.html';"><br><p>Covid-19 Tracker</p></center></div>
+            
+              <div class="card"><center><img src="images/wc%20main%20logo.png" onclick="window.location.href='wc.html';"> <br><p>WeCast</p></center></div>
+     
+            
+     
+        </div>
+      
+      </div>
+      </div>
+      <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header"><img src="images/ustore.png" width="80px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+         <ul class="slides">
+            <li class="list-group-item">Welcome Back to School&nbsp;<i class="fa fa-graduation-cap"></i></li>
+             <li class="list-group-item">We need you all to collaborate with us to create awesome applications</li>
+             <li class="list-group-item">Start Your coding course on Tap studio Code Today</li>
+            
+            
+            </ul> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-  
-  </div>
-  
-     <button class="btn btn-warning" style="border-radius: 100px;" > <i class="fa fa-comments-o w3-hover-opacity fa-3x" onclick="window.location.href='https://iboychater.000webhostapp.com/';"></i></button>
-        
-         <button class="btn btn-success" style="border-radius: 100px;"> <i class="fa fa-code w3-hover-opacity fa-3x" onclick="window.location.href='https://tapstudiocode.000webhostapp.com/';"></i></button>
-        
-    </center>
 </div>
-<div id="splash"  class="flex-container" 
-        style ="background:-webkit-linear-gradient(-135deg,gold,aqua); display: none"  >
+
+   <div id="splash"  class="flex-container" 
+        style ="background:-webkit-linear-gradient(-135deg,aqua,gold); display: none"  >
     
      <!--Center align Splash contents in all screen sizes-->
          <div class ="flex-item" >
-          <img src="images/ustore.png" 
+          <center>  <img src="images/ustore.png" 
                alt="app_icon" 
-               style="width:60%; top:1; "
-               />
+               style="width:50%; top:1; "
+               /><br><br>
+          </center>
            
           
-    </div></div></div></div>
-    <script>
-function brakechain() {
-  var a;
-  a = document.getElementById("div1");
-  a.innerHTML = "&#xf0c1;";
-  setTimeout(function () {
-      a.innerHTML = "&#xf127;";
-    }, 1000);
-}
-brakechain();
-setInterval(brakechain, 2000);
-</script>
-<script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
+      </div></div>
+    
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-    <script>
-function openTab(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcont");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tabli");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-    <script>
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
+   
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+  
+  <script src="js/mediaelement-and-player.min.js"></script>
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
+  <script src="js/main.js"></script>
+    
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
-     <script type="text/javascript">
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+                var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
+
+                for (var i = 0; i < total; i++) {
+                    new MediaElementPlayer(mediaElements[i], {
+                        pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
+                        shimScriptAccess: 'always',
+                        success: function () {
+                            var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
+                            for (var j = 0; j < targetTotal; j++) {
+                                target[j].style.visibility = 'visible';
+                            }
+                  }
+                });
+                }
+            });
+    </script>
+ <script type="text/javascript">
     
     function fade(element) {
     var op = 1;  // initial opacity
@@ -644,19 +531,10 @@ function showDivs(n) {
                   }
          
                 else {
-                        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                        document.getElementById("result").innerHTML = "Sorry, your device does not support this storage...";
                       }
                          }, 0);
 
   	</script>
-    <script>
-function myFunction() {
-  var x = document.getElementById("snackbar");
-  x.className = "show";
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
-</script>
-     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</body>
-</html> 
+  </body>
+</html>
