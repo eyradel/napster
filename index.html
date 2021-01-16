@@ -246,6 +246,148 @@ p {
         left: 0;
        background-size: cover;
     }
+        .ringing-bell {
+    position: absolute;
+   
+    transition: translate(-50%, -50%)
+}
+
+
+
+@-webkit-keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg)
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg)
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        -ms-transform: rotate(-22deg);
+        transform: rotate(-22deg)
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        -ms-transform: rotate(22deg);
+        transform: rotate(22deg)
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        -ms-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+.faa-ring.animated,
+.faa-ring.animated-hover:hover,
+.faa-parent.animated-hover:hover>.faa-ring {
+    -webkit-animation: ring 2s ease infinite;
+    animation: ring 2s ease infinite;
+    transform-origin-x: 50%;
+    transform-origin-y: 0px;
+    transform-origin-z: initial
+}
       </style>
   </head>
   <body style="overflow-x: hidden;">
@@ -285,7 +427,7 @@ p {
                       <li class="active">
                         <a href="index.html"><i class="fa fa-home"></i>&nbsp;Home</a>
                       </li>
-                        <li><a   data-toggle="modal" data-target="#myModal"><i class="fa fa-bell">&nbsp;</i>Notifications</a></li>
+                        <li><a   data-toggle="modal" data-target="#myModal"><div class="ringing-bell"> <i class="fa fa-bell faa-ring animated">&nbsp;</i></div>&nbsp;&nbsp;&nbsp;&nbsp;Notifications</a></li>
                       <li class="has-children">
                         <a class="active"><i class="fa fa-cog fa-spin"></i>&nbsp;Works</a>
                         <ul class="dropdown arrow-top">
@@ -300,7 +442,7 @@ p {
                     
                       <li><a href="team.html"><i class="fa fa-binoculars"></i>&nbsp;About</a></li>
              
-                       <a href="mailto:kuwornueyramdela2000@gmail.com?subject=Please paste and add your app its name, supported images here"><i class="fa fa-plus-circle">&nbsp;Add</i></a>  
+                     <li>  <a href="mailto:kuwornueyramdela2000@gmail.com?subject=Please paste and add your app its name, supported images here"><i class="fa fa-plus-circle fa-spin"></i>&nbsp;Add Your App</a>  </li>
                     </ul>
                   </div>
                 </nav>
