@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ustore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+      <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+     <link rel="stylesheet" href="css/mdb.css">
+    
+    
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  
+   
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+           margin-bottom: 30px;
+}
+    
+
+.app-image {
+    height: 100px;
+    width: 75px;
+}
+
+.app-image img {
+    height: 65px;
+    width: 70px;
+    float: left;
+    
+}
+
+.game-info div {
+    display: inline-block;
+    font-size: 23px;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+.publisher {
+    font-size: 14px;
+    font-family: verdana;
+    color: #33691e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.game-info span {
+    font-size: 14px;
+    color: #737373;
+    display:inline-block ;
+}
+
+.logo span {
+    height: 40px;
+    width: 90px;
+    display: inline-block;
+    float: left;
+    border-right: 1px solid grey;
+    margin-left: 10px;
+}
+
+.box {
+    border: 1.5px solid black;
+}
+
+.install {
+    background-color: green;
+    color: #fff;
+    font-size: 18px;
+    font-family: verdana;
+    padding: 8px;
+    text-align: center;
+    
+    width: 90%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.game-pics {
+    margin-top: 25px;
+    margin-left: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.game-pics::-webkit-scrollbar {
+    display: none;
+}
+
+.game-pics img {
+    
+    height: 160px;
+    display: inline-block;
+    margin: 3px;
+}
+
+.heading {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.description {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: #424242;
+}
+
+.rate {
+    font-size: 70px;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+
+.stars {
+    font-size: 20px;
+    margin-left: 58px;
+    color: green;
+}
+
+.comments {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.comments img {
+    border-radius: 30px;
+    float: left;
+}
+
+.star {
+    color: green;
+}
+
+.content {
+    margin-left: 15px;
+    color: #555555;
+}
+
+.more-apps {
+    color: #fff;
+    background: white;
+    width: 100%;
+}
+
+.oth-games img {
+    height: 100px;
+    width: 100px;
+    
+   
+}
+
+.oth-games div {
+    display: inline-block;
+    width: 150px;
+    height: 180px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.oth-games a {
+    color: white;
+}
+
+.oth-games {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.oth-games::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    color: black;
+    font-family: sans-serif;
+}
+    .card{
+    border-radius: 10px;
+        
+        background: -webkit-linear-gradient(-135deg,lavender,ghostwhite);
+    }
+        
+        
+        .flex-container {
+     
+       
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+   position: relative;
+          object-position: center;
+           z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        
+    }
+        .btn{
+            border-radius: 100px;
+}
+    
+   .flex-item {
+       
+       background:-webkit-linear-gradient(-135deg,lavender,ghostwhite);
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+       background-size: cover;
+    }
+        .ringing-bell {
+    position: absolute;
+   
+    transition: translate(-50%, -50%)
+}
+
+
+
+@-webkit-keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg)
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg)
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        -ms-transform: rotate(-22deg);
+        transform: rotate(-22deg)
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        -ms-transform: rotate(22deg);
+        transform: rotate(22deg)
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        -ms-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+.faa-ring.animated,
+.faa-ring.animated-hover:hover,
+.faa-parent.animated-hover:hover>.faa-ring {
+    -webkit-animation: ring 2s ease infinite;
+    animation: ring 2s ease infinite;
+    transform-origin-x: 50%;
+    transform-origin-y: 0px;
+    transform-origin-z: initial
+}
+      </style>
+  </head>
+  <body style="overflow-x: hidden;">
+  <div id ="main" class=""> 
+      
+      
+      
+      
+    <div class="flex-container">
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    
+    
+    <div class="site-navbar-wrap js-site-navbar bg-white">
+      
+      <div class="container">
+        <div class="site-navbar bg-light">
+          <div class="py-1">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <h2 class="mb-0 site-logo"><a href=""><img src="images/ustore.png" width="90"></a></h2>
+              </div>
+              <div class="col-10">
+                <nav class="site-navigation text-right" role="navigation">
+                  <div class="container">
+                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3" ></span></a></div>
+
+                    <ul class="site-menu js-clone-nav d-none d-lg-block">
+                      
+                        
+                        <li><a   data-toggle="modal" data-target="#myModal"><div class="ringing-bell"> <i class="fa fa-bell faa-ring animated">&nbsp;</i></div>&nbsp;&nbsp;&nbsp;&nbsp;Notifications</a></li>
+                      
+                    
+                      
+             
+                     <li>  <a href="mailto:kuwornueyramdela2000@gmail.com?subject=Please paste and add your app its name, supported images here"><i class="fa fa-plus-circle fa-spin"></i>&nbsp;Suggest Paid Apps</a>  </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+   
+        </div></div><br><br><br><br><br><br>
+      <div style="height: 10px;"></div>
+    
+      
+      
+      
+      <br><br>
+      <div class="col">  <p><img src="images/icons8_apple_app_store_512px.png" width="70px;" >&nbsp;Premium Apps(free)</p>
+      <div class="oth-games">
+        
+           
+            
+             
+            <div class="card"><center><a href="https://drive.google.com/file/d/13-Ne31U-EPnyP9FOaJpCQOyyXqROW3lU/view?usp=sharing" target="_blank"><img src="images/icons8_python_512px.png"></a><br><i class="fa fa-download"></i><p> Pydroid pro</p></center></div>
+             
+           <div class="card"><center><a href="https://drive.google.com/file/d/1oKVxbveQ_8y1y-RpbTKVhn6BAmM1eM7t/view?usp=sharing" target="_blank"><img src="images/icons8_c_plus_plus_512px_1.png"></a><br><i class="fa fa-download"></i><p> Cxx droid</p></center></div>
+        
+           <div class="card"><center><a href="https://drive.google.com/file/d/1i_ZKfsQy2dfWHce2BWy_0c3AUo4A8EKz/view?usp=sharing" target="_blank"><img src="images/icons8_learning_512px.png"></a><br><i class="fa fa-download"></i><p>Solo learn pro</p></center></div>
+           
+          <div class="card"><center><a href="https://drive.google.com/file/d/1XgYlz7HDQ5rzYLyVFyW7rX44gE2q5mft/view?usp=sharing" target="_blank"><img src="images/icons8_camera_512px.png"></a><br><i class="fa fa-download"></i><p>Inshot pro</p></center></div>
+          
+          <div class="card"><center><a href="https://drive.google.com/file/d/1l2jh1yJ7HxxHt5q3SmU7ifmkvd0Jusqq/view?usp=sharing" target="_blank"><img src="images/icons8_smiling_face_with_sunglasses_512px.png">
+              </a><br><i class="fa fa-download"></i><p>Lucky patcher pro</p></center></div>
+        </div>
+          
+      
+      </div>
+    
+       
+      
+      <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header"><img src="images/icons8_virtual_reality.ico" width="80px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+         <ul class="slides">
+            <li class="list-group-item">"suggest paid applications so that we get it cracked for you"&nbsp;<i class="fa fa-graduation-cap"></i></li>
+             <li class="list-group-item">More projects on the way&nbsp;<i class="fa fa-connectdevelop"></i></li>
+             
+            
+            </ul> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+   
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  
+  <script src="js/mediaelement-and-player.min.js"></script>
+
+  <script src="js/main.js"></script>
+    
+
+  </body>
+</html>
