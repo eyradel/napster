@@ -1,128 +1,600 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>UFD</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta charset="utf-8">
-     <link rel="stylesheet" href="css/mdb.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="play store clone.css">
-     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
-</head>
-<body class="container">
-      <div class="site-wrap">
+  <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
 
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div> <!-- .site-mobile-menu -->
-    
-    
-    <div class="site-navbar-wrap js-site-navbar bg-white">
-      
-      <div class="container">
-        <div class="site-navbar bg-light">
-          <div class="py-1">
-            <div class="row align-items-center">
-              <div class="col-2">
-                <h2 class="mb-0 site-logo"><a href=""><img src="images/ustore.png" width="90"></a></h2>
-              </div>
-              <div class="col-10">
-                <nav class="site-navigation text-right" role="navigation">
-                  <div class="container">
-                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3" ></span></a></div>
-
-                
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
- 
+  	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
    
-        </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      
-   <center><div class="row game-info">
-        <div class="app-image"><img src="images/icons8_code_file_510px.png"></div>
-        <br>
-        <div>Webcode<br>
-        <a class="publisher" >I.B.O.Y</a><br>
-        <span>Contains no ads.No In-app Purchases</span>
-        </div>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+   <link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css">
+  
+<link rel="stylesheet" href="css/bootstrap.css">
+  
     
+  <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
 
-    <div class="logo">
-        <span>4.3 &#9733;<br>7 reviews</span>
-        <span class="fa fa-signal"><br>4.09mb</span>
+ <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+  <style>
+     
+     
+      html, body, .viewport img {
+        width: 100%;
+        height: 100%; 
+        margin: 0;
+        border-radius: 10px;
+         
+         
+      }
+       .ringing-bell {
+    position: absolute;
 
-        <span>5+<br>Downloads</span>
-    </div></div></center> <br><br><br><br>
+    transition: translate(-50%, -50%)
+}
 
-    <a href="https://drive.google.com/file/d/1B3rlvd6MOUWLBhAQWvkszvoqZKjfCNJk/view?usp=sharing"><div class="install"><i class="fa fa-download"></i></div></a>
 
-    <div class="game-pics">
-        <img src="images/wbc.png"t="" id="myImg">
+
+@-webkit-keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg)
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg)
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        -ms-transform: rotate(-22deg);
+        transform: rotate(-22deg)
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        -ms-transform: rotate(22deg);
+        transform: rotate(22deg)
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        -ms-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+.faa-ring.animated,
+.faa-ring.animated-hover:hover,
+.faa-parent.animated-hover:hover>.faa-ring {
+    -webkit-animation: ring 2s ease infinite;
+    animation: ring 2s ease infinite;
+    transform-origin-x: 50%;
+    transform-origin-y: 0px;
+    transform-origin-z: initial
+}
+      
+  
+   
+      .btn
+      {
+          border-radius: 100px;
+      }
+      .input
+      {
+ border-radius: 100px;
+}
+      .rin
+      { position: absolute;
+          font-size: 15px;
+          margin-bottom: 660px;
+          margin-left: 390px;
+          padding: 10px;
+      }
+     .men
+      {
+   margin :auto auto auto auto;
+          width: 320px;
+      
+      }
+      #l{
+background: -webkit-linear-gradient(-135deg,bisque,lavender);
+      }
+     .card
+      {
+        
+          
+          margin :auto auto auto auto;
+          padding: 10px 10px 10px 10px;
+          border-radius: 20px;
+          width: 95%;
+      }
+      .game-pics {
+    margin-top: 25px;
+    margin-left: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.game-pics::-webkit-scrollbar {
+    display: none;
+}
+
+.game-pics img {
+    border-radius: 18px;
+    height: 160px;
+    display: inline-block;
+    margin: 3px;
+}
+
+      
+      #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+      .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+      .oth-games img {
+    height: 100px;
+    width: 100px;
+    
+   
+}
+
+.oth-games div {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+     background: -webkit-linear-gradient(-135deg,whitesmoke,lavender)
+}
+
+.oth-games a {
+    color: white;
+}
+
+.oth-games {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.oth-games::-webkit-scrollbar {
+    display: none;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+    </style>
+    
+    
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+    
+</head>
+<body  >
+ 
+
+      
+        <script>
+          function goBack() {
+  window.history.back();
+}
+    </script>
+      
+      
+  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a onclick="goBack()" class="navbar-text btn btn-"><i class="fa fa-arrow-left"></i></a>
+           <div class="btn-group" role="group" aria-label="Basic example" style="border-radius: 15px;"> 
+        
+        
+        <div class="btn-group " >
+          <button   class="btn btn-outline "  onclick="swapStyle('light.css')" type="button">Light</button>
+ 
+   <button
+  onclick="swapStyle('dark.css')"
+           class="btn btn-dark " type="button"
+
+>
+  Dark
+</button>
+       
+        </div>
+
+</div>
+            
+            
+          <a data-toggle="modal"  class="navbar-brand btn btn-" ><img src="images/icons8_code_file_510px.png" width="20"></a>
+        </nav>
+        
+        
+        
+      
+        <div class="col-md-6 offset-md-3 mt-5 men card-body card " loading="lazy" >
+            <div class="container "> 
+            <div class="card-body col-sm-12 " style="border-radius:10px; "> 
+                <div class="row"> 
+                    <center>
+            <div class="col-md-4" >
+                <div class="form-group   row" >
+                    <img src="images/icons8_code_file_510px.png" width="100" >
+                
+                </div>
+                
+                <h>Webcode <p>4.09mb</p> </h>
+               
+                
+                    </div>
+                    
+                         <div class="game-pics">
+   <img src="images/wbc.png"t="" id="myImg">
         <img src="images/wbc1.png" alt=""  id="myImg1">
         <img src="images/wbc4.png" alt="" id="myImg2">
         <img src="images/wbc6.png" alt="" id="myImg3">
         
-        
     </div>
+               
 
-    <div class="heading">
-        About This App &#8594;
-    </div>
-    <div class="description">This App is developed at Tap studio GH </div>
+                        
+                        
+                        
+                        
+                    
+                    
+                    </center> </div>
+                
+                
+                
+                
+                
+                <form class="form-download ">
+                <div class="row"> <div class="col-md-12"> <div class="form-group">  
+                     
+                    
+                    
+                     </div> </div> </div> <div class="row"> <div class="col-md-12"> <div class="form-group mt-4 download-video"> <a class="btn btn btn-block" href="https://drive.google.com/file/d/1B3rlvd6MOUWLBhAQWvkszvoqZKjfCNJk/view?usp=sharing"><i class="fa fa-download fa-2x"></i></a>
+             
+            
+            <br>
+                    
+                    
+    </div> 
 
-    <div class="heading">Ratings and reviews &#8594;</div>
-    <div class="rate">4.2</div>
-    <div class="stars">&#9733;&#9733;&#9733;&#9733;<br>Unknown</div><br><hr>
 
-    <div class="comments">
-        <img src="images/addae.jpg" width="60">&nbsp; <br><br>koffi<br><br><br>
-        <div class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <div class="content"> cool</div><br><br>
-        <img src="images/maureen.jpeg" width="60">&nbsp; <br><br>Maureen<br><br><br>
-        <div class="star">&#9733;&#9733;&#9733;&#9733;<i class="fa fa-star-o"></i></div>
-        <div class="content">i love the app</div><br><br>
-    </div><hr>
-    <p>More Apps -</p>
-    <div class="container more-apps">
-        <div class="oth-games">
-            <div class="card"><center><img src="images/corona.png" onclick="window.location.href='cov.html';"><br><p>Covid-19 Tracker</p></center></div>
+
+
+                    
+                  <center>
+              <a id="l" class="card popup btn btn-outline-info  btn-block " onclick="myFunction()"><i class="fa fa-envelope-o fa-2x faa-ring animated"></i>
+  <span class="popuptext" id="myPopup"><h>This App is developed by Eyram Dela to help get updates on the covid19  </h></span>
+</a>   </center>     
+                    
+                  </div> </div> </form> </div>
+            
+                  
+            
+             <div class="oth-games">
+     <div class=" btn btn- card"><center><img src="images/icons8-brains-64.png" onclick="window.location.href='csu.html';"><br><p>  CSU</p></center></div>
+      <div class="card"><center><img src="images/icons8_water_512px.png" onclick="window.location.href='wp.html';"><br><p>  Water puzzle</p></center></div>
+          
+          <div class="card"><center><img src="images/icons8_question_mark_512px.png" onclick="window.location.href='gg.html';"><br><p>Guess game</p></center></div>
+          
+     <div class=" btn btn- card"><center><img src="images/icons8_archers_bow_512px.png" onclick="window.location.href='ar.html';"><br><p>Archery</p></center></div>
+            <div class=" btn btn- card"><center><img src="images/corona.png" onclick="window.location.href='cov.html';"><br><p>Covid-19 Tracker</p></center></div>
             
             
-             <div class="card"><center><img src="images/umex%20main%20logo.png" onclick="window.location.href='umex.html';"><br><p>UMEX APP</p></center></div>
-           <div class="card"><center><img src="images/icons8_circuit_512px_1.png" onclick="window.location.href='cc.html';"><br><p>Circuit Connect</p></center></div>
-            <div class="card"><center><img src="images/udf%20ico.png" onclick="window.location.href='dev.html';"><br><p>UMat Fids Devotional</p></center></div>
-             <div class="card"><center><img src="images/icons8_game_pool_512px.png" onclick="window.location.href='sn.html';"><br><p> Snooker</p></center></div>
-             <div class="card"><center><img src="images/icons8-brains-64.png" onclick="window.location.href='csu.html';"><br><p>CSUMaT&nbsp;&nbsp;&nbsp; App</p></center></div>
-               <div class="card"><center><img src="images/aanics.png" onclick="window.location.href='aaenics.html';"><br><p> Aaenics</p></center></div>s
-            <div class="card"><center><img src="images/fl1.png" onclick="window.location.href='fl.html';"><br><p> Flames App</p></center></div>
+             <div class="btn btn- card"><center><img src="images/icons8_game_pool_512px.png" onclick="window.location.href='sn.html';"><br><p> Snooker</p></center></div>
+             <div class="btn btn- card"><center><img src="images/umex%20main%20logo.png" onclick="window.location.href='umex.html';"><br><p>UMEX APP</p></center></div>
+             <div class="btn btn- card"><center><img src="images/icons8_circuit_512px_1.png" onclick="window.location.href='cc.html';"><br><p>Circuit Connect</p></center></div>
+            <div class="btn btn- card"><center><img src="images/udf%20ico.png" onclick="window.location.href='dev.html';"><br><p>UMat Fids Devotional</p></center></div>
+               <div class="btn btn- card"><center><img src="images/aanics.png" onclick="window.location.href='aaenics.html';"><br><p> Aaenics</p></center></div>
+            <div class="btn btn- card"><center><img src="images/fl1.png" onclick="window.location.href='fl.html';"><br><p> Flames App</p></center></div>
              <div class="card"><center><img src="images/cwa.png" onclick="window.location.href='cwa.html';"> <br><p>Grade Calculator</p></center></div>
-             <div class="card"><center><img src="images/crushy.png" onclick="window.location.href='crushy.html';"> <br><p>Crushy</p></center></div>
-            <div class="card"><center><img src="images/wc%20main%20logo.png" onclick="window.location.href='wc.html';"> <br><p>WeCast</p></center></div>
-        </div></div>
-    <div id="myModal" class="modal">
+             <div class="btn btn- card"><center><img src="images/crushy.png" onclick="window.location.href='crushy.html';"> <br><p>Crushy</p></center></div>
+            <div class="btn btn- card"><center><img src="images/wc%20main%20logo.png" onclick="window.location.href='wc.html';"> <br><p>WeCast</p></center></div>
+      <div class="btn btn- card"><center><img src="images/GESAM.jpg" style="border-radius: 50px;" onclick="window.location.href='gs.html';"> <br><p>GESAM</p></center></div>
+     
+        </div>
+      
+            
+            
+            
+            </div> 
+        
+        
+        
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- The Modal -->
+<div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
+
+
+     
+	<script type="text/javascript">
+
+		var setTheme = localStorage.getItem('theme')
+		console.log('theme:', setTheme)
+
+		if (setTheme == null){
+			swapStyle('light.css')
+		}else{
+			swapStyle(setTheme)
+		}
+
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+
+
+		/*
+		var setTheme = localStorage.getItem('theme')
+		if (setTheme == null){
+			swapStyles('light.css')
+		}else{
+			swapStyles(setTheme)
+		}
+			
+		
+		function swapStyles(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+		*/
+		
+	</script>
+ 
     <script>
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -299,264 +771,5 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 </script>
-<style> 
-    margin-bottom: 30px;
-}
-    
-
-.app-image {
-    height: 100px;
-    width: 75px;
-}
-
-.app-image img {
-    height: 65px;
-    width: 70px;
-    border-radius: 20px;
-    float: left;
-    
-}
-
-.game-info div {
-    display: inline-block;
-    font-size: 23px;
-    font-family: sans-serif;
-    margin-left: 10px;
-}
-
-.publisher {
-    font-size: 14px;
-    font-family: verdana;
-    color: #33691e;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.game-info span {
-    font-size: 14px;
-    color: #737373;
-    display:inline-block ;
-}
-
-.logo span {
-    height: 40px;
-    width: 90px;
-    display: inline-block;
-    float: left;
-    border-right: 1px solid grey;
-    margin-left: 10px;
-}
-
-.box {
-    border: 1.5px solid black;
-}
-
-.install {
-    background-color: green;
-    color: #fff;
-    font-size: 18px;
-    font-family: verdana;
-    padding: 8px;
-    text-align: center;
-    border-radius: 7px;
-    width: 90%;
-    margin: auto;
-    
-}
-
-a {
-    text-decoration: none;
-}
-
-.game-pics {
-    margin-top: 25px;
-    margin-left: 15px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.game-pics::-webkit-scrollbar {
-    display: none;
-}
-
-.game-pics img {
-    border-radius: 18px;
-    height: 160px;
-    display: inline-block;
-    margin: 3px;
-}
-
-.heading {
-    margin-top: 10px;
-    margin-left: 15px;
-    font-size: 22px;
-    font-family: sans-serif;
-}
-
-.description {
-    margin-top: 20px;
-    margin-left: 15px;
-    color: #424242;
-}
-
-.rate {
-    font-size: 70px;
-    margin-left: 55px;
-    margin-top: 10px;
-}
-
-.stars {
-    font-size: 20px;
-    margin-left: 58px;
-    color: green;
-}
-
-.comments {
-    margin-top: 10px;
-    margin-left: 15px;
-}
-
-.comments img {
-    border-radius: 30px;
-    float: left;
-}
-
-.star {
-    color: green;
-}
-
-.content {
-    margin-left: 15px;
-    color: #555555;
-}
-
-.more-apps {
-    color: #fff;
-    background: white;
-    width: 100%;
-}
-
-.oth-games img {
-    height: 100px;
-    width: 100px;
-    border-radius: 20px;
-}
-
-.oth-games div {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    margin-left: 5px;
-}
-
-.oth-games a {
-    color: white;
-}
-
-.oth-games {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.oth-games::-webkit-scrollbar {
-    display: none;
-}
-
-p {
-    color: black;
-    font-family: sans-serif;
-}
-    .card{
-    border-radius: 50px;
-    }
-    
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-    </style>
-</body>
+  </body>
 </html>

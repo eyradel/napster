@@ -7,8 +7,10 @@
 
     
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+      
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+     <link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css">
    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
       <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
@@ -21,9 +23,20 @@
 
     <link rel="stylesheet" href="css/style.css">
     <style>
+        body
+        {
+
+        width: 100%;
         
+        }
            margin-bottom: 30px;
 }
+        p
+        {
+    font: 4px;
+            
+        
+        }
     
 
 .app-image {
@@ -192,9 +205,13 @@ p {
     font-family: sans-serif;
 }
     .card{
-    border-radius: 10px;
-        background: -webkit-linear-gradient(-135deg,lavender,ghostwhite);
+        padding: 10px 5px 5px 5px;
+    border-radius: 30px;
+        background: -webkit-linear-gradient(-170deg,ghostwhite,lavender);
+        
+       
     }
+       
         
         
         .flex-container {
@@ -221,11 +238,13 @@ p {
     }
         .btn{
             border-radius: 100px;
+            
+            
 }
     
    .flex-item {
-       
-       background:-webkit-linear-gradient(-135deg,lavender,ghostwhite);
+      
+       background:-webkit-linear-gradient(-135deg,antiquewhite,bisque,whitesmoke,lavender);
         display: -moz-box;
         display: -ms-flexbox;
         display: flex;
@@ -389,6 +408,9 @@ p {
     transform-origin-z: initial
 }
       </style>
+      
+      
+      
   </head>
   <body style="overflow-x: hidden;">
   <div id ="main" class=""> 
@@ -409,7 +431,7 @@ p {
     </div> <!-- .site-mobile-menu -->
     
     
-    <div class="site-navbar-wrap js-site-navbar bg-white">
+    <div class="site-navbar-wrap js-site-navbar bg-white ">
       
       <div class="container">
         <div class="site-navbar bg-light">
@@ -421,9 +443,27 @@ p {
               <div class="col-10">
                 <nav class="site-navigation text-right" role="navigation">
                   <div class="container">
-                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3" ></span></a></div>
+                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3 btn btn"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu " ></span></a></div>
 
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
+                          <li>
+                        
+                         <div class="btn-group " >
+          <button   class="btn btn-outline "  onclick="swapStyle('light.css')" type="button">Light</button>
+ 
+   <button
+  onclick="swapStyle('dark.css')"
+           class="btn btn-dark " type="button"
+
+>
+  Dark
+</button>
+       
+        </div>
+
+                        
+                        
+                        </li>
                       <li class="active">
                         <a href="index.html"><i class="fa fa-home"></i>&nbsp;Home</a>
                       </li>
@@ -445,6 +485,7 @@ p {
 
                         </ul>
                       </li>
+                      
                     
                       
              
@@ -465,10 +506,7 @@ p {
       
       <br><br><br><br><br><br>
       <div style="height: 10px;"></div>
-      <div class="col">
-   <P>  <img src="images/icons8_android.ico" width="50px;">&nbsp;APPS</P>
-     
-         
+      <div class="col">  <img src="images/icons8_android.ico" width="50px;" >&nbsp;<h id="p">All</h>
       
  <div class="oth-games">
      <div class="card"><center><img src="images/icons8-brains-64.png" onclick="window.location.href='csu.html';"><br><p>  CSU</p></center></div>
@@ -493,12 +531,13 @@ p {
      
         </div>
       
+          
       </div>
       
       
       
       <br><br>
-      <div class="col">  <p><img src="images/icons8_musically_3.ico" width="50px;" >&nbsp;Social</p>
+      <div class="col">  <img src="images/icons8_musically_3.ico" width="50px;" >&nbsp;<h id="p">Social</h>
       <div class="oth-games">
         
            
@@ -515,7 +554,7 @@ p {
         </div>
       
       </div>
-      <div class="col">  <p><img src="images/icons8_game_controller.ico" width="50px;" >&nbsp;Games</p>
+      <div class="col">  <img src="images/icons8_game_controller.ico" width="50px;" >&nbsp;<h id="p">Games</h>
       <div class="oth-games">
         
            
@@ -537,7 +576,7 @@ p {
         </div>
       
       </div>
-       <div class="col">  <p><img src="images/icons8_code.ico" width="50px;" >&nbsp;Coding</p>
+       <div class="col">  <img src="images/icons8_code.ico" width="50px;" >&nbsp;<h id="p">Coding</h>
       <div class="oth-games">
         
            
@@ -553,7 +592,7 @@ p {
         </div>
       
       </div>
-      <div class="col">  <p><img src="images/icons8_rfid_signal.ico" width="50px;" >&nbsp;Trackers</p>
+      <div class="col">  <img src="images/icons8_rfid_signal.ico" width="50px;" >&nbsp;<h id="p">Trackers</h>
       <div class="oth-games">
         
            
@@ -600,7 +639,7 @@ p {
   </div>
 </div>
 
-   <div id="splash"  class="flex-container" 
+   <div id="splash"  class=" card flex-container" 
         style ="background:-webkit-linear-gradient(-135deg,aqua,gold); display: none"  >
     
      <!--Center align Splash contents in all screen sizes-->
@@ -703,5 +742,40 @@ p {
                          }, 0);
 
   	</script>
+       
+	<script type="text/javascript">
+
+		var setTheme = localStorage.getItem('theme')
+		console.log('theme:', setTheme)
+
+		if (setTheme == null){
+			swapStyle('light.css')
+		}else{
+			swapStyle(setTheme)
+		}
+
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+
+
+		/*
+		var setTheme = localStorage.getItem('theme')
+		if (setTheme == null){
+			swapStyles('light.css')
+		}else{
+			swapStyles(setTheme)
+		}
+			
+		
+		function swapStyles(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+		*/
+		
+	</script>
+      
   </body>
 </html>
