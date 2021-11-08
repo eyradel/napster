@@ -227,6 +227,36 @@ background: -webkit-linear-gradient(-135deg,bisque,lavender);
     display: inline-block;
     margin: 3px;
 }
+      .oth-games img {
+    height: 100px;
+    width: 100px;
+    
+   
+}
+
+.oth-games div {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(-135deg,whitesmoke,lavender)
+}
+
+.oth-games a {
+    color: white;
+}
+
+.oth-games {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.oth-games::-webkit-scrollbar {
+    display: none;
+}
 
       
       #myImg {
@@ -252,6 +282,7 @@ background: -webkit-linear-gradient(-135deg,bisque,lavender);
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
+
 
 /* Modal Content (image) */
 .modal-content {
@@ -327,36 +358,6 @@ background: -webkit-linear-gradient(-135deg,bisque,lavender);
   padding: 10px 0;
   height: 150px;
 }
-      .oth-games img {
-    height: 100px;
-    width: 100px;
-    
-   
-}
-
-.oth-games div {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    margin-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-     background: -webkit-linear-gradient(-135deg,whitesmoke,lavender)
-}
-
-.oth-games a {
-    color: white;
-}
-
-.oth-games {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.oth-games::-webkit-scrollbar {
-    display: none;
-}
 
 /* Add Animation */
 .modal-content, #caption {  
@@ -416,16 +417,16 @@ function myFunction() {
  
 
       
-        <script>
+      
+      
+      <script>
           function goBack() {
   window.history.back();
 }
     </script>
-      
-      
   
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a onclick="goBack()" class="navbar-text btn btn-"><i class="fa fa-arrow-left"></i></a>
+        <a class="navbar-text btn btn-" onclick="goBack()"><i class="fa fa-arrow-left"></i></a>
            <div class="btn-group" role="group" aria-label="Basic example" style="border-radius: 15px;"> 
         
         
@@ -445,7 +446,7 @@ function myFunction() {
 </div>
             
             
-          <a data-toggle="modal"  class="navbar-brand btn btn-" ><img src="images/icons8_question_mark_512px.png" width="20"></a>
+          <a data-toggle="modal"  class="navbar-brand btn btn-" ><img style="border-radius: 50%" src="images/nugs.png" width="20"></a>
         </nav>
         
         
@@ -458,20 +459,20 @@ function myFunction() {
                     <center>
             <div class="col-md-4" >
                 <div class="form-group   row" >
-                    <img src="images/icons8_question_mark_512px.png" width="100" >
+                    <img src="images/nugs.png" width="100" style="border-radius: 50%" >
                 
                 </div>
                 
-                <h>Guess Game  <p>3.36mb</p> </h>
+                <h>Nugs <p>288kb</p> </h>
                
                 
                     </div>
                     
                          <div class="game-pics">
-      <img src="images/gg.png"t="" id="myImg">
-        <img src="images/gen%20(2).png" alt=""  id="myImg1">
-        <img src="images/gg1.png" alt="" id="myImg2">
-        <img src="images/gen3.png" alt="" id="myImg3">
+        <img src="images/Copy%20of%20Download%20app%20flyer%20-%20Made%20with%20PosterMyWall%20(4).jpg"t="" id="myImg">
+        <img src="images/nugs.png" alt=""  id="myImg1">
+      
+        
         
     </div>
                
@@ -493,7 +494,7 @@ function myFunction() {
                      
                     
                     
-                     </div> </div> </div> <div class="row"> <div class="col-md-12"> <div class="form-group mt-4 download-video"> <a class="btn btn btn-block" href="https://drive.google.com/file/d/1VyxtWbCviifvDdfpV6D_rVOf-3vBPAte/view?usp=sharing"><i class="fa fa-download fa-2x"></i></a>
+                     </div> </div> </div> <div class="row"> <div class="col-md-12"> <div class="form-group mt-4 download-video"> <a class="btn btn btn-block" href="https://drive.google.com/file/d/17b-UjrK5aEmc97GTulkDPpa7J5g8zmTJ/view?usp=sharing"><i class="fa fa-download fa-2x"></i></a>
              
             
             <br>
@@ -507,19 +508,19 @@ function myFunction() {
                     
                   <center>
               <a id="l" class="card popup btn btn-outline-info  btn-block " onclick="myFunction()"><i class="fa fa-envelope-o fa-2x faa-ring animated"></i>
-  <span class="popuptext" id="myPopup"><h>This App is developed at Tap studio GH </h></span>
+  <span class="popuptext" id="myPopup"><h>This App is developed by Nugs UMaT tech team </h></span>
 </a>   </center>     
                     
                   </div> </div> </form> </div> 
             
-                  
             
-                    <div class="oth-games">
-                  <div class="btn btn- card"><center><img src="images/nugs.png" style="border-radius: 50px;" onclick="window.location.href='nugs.html';"> <br><p>Nugs App</p></center></div>
+            
+             <div class="oth-games">
      <div class=" btn btn- card"><center><img src="images/icons8-brains-64.png" onclick="window.location.href='csu.html';"><br><p>  CSU</p></center></div>
       <div class="card"><center><img src="images/icons8_water_512px.png" onclick="window.location.href='wp.html';"><br><p>  Water puzzle</p></center></div>
           
-       
+          <div class="card"><center><img src="images/icons8_question_mark_512px.png" onclick="window.location.href='gg.html';"><br><p>Guess game</p></center></div>
+          
      <div class=" btn btn- card"><center><img src="images/icons8_archers_bow_512px.png" onclick="window.location.href='ar.html';"><br><p>Archery</p></center></div>
             <div class=" btn btn- card"><center><img src="images/corona.png" onclick="window.location.href='cov.html';"><br><p>Covid-19 Tracker</p></center></div>
             
@@ -533,12 +534,10 @@ function myFunction() {
              <div class="card"><center><img src="images/cwa.png" onclick="window.location.href='cwa.html';"> <br><p>Grade Calculator</p></center></div>
              <div class="btn btn- card"><center><img src="images/crushy.png" onclick="window.location.href='crushy.html';"> <br><p>Crushy</p></center></div>
             <div class="btn btn- card"><center><img src="images/wc%20main%20logo.png" onclick="window.location.href='wc.html';"> <br><p>WeCast</p></center></div>
-      <div class="btn btn- card"><center><img src="images/GESAM.jpg" style="border-radius: 50px;" onclick="window.location.href='gs.html';"> <br><p>GESAM</p></center></div>
-                           <div class="btn btn- card"><center><img src="images/aen.jpg" style="border-radius: 50px;" onclick="window.location.href='aenics.html';"> <br><p>Aaenics</p></center></div>
-     
+      <div class="btn btn- card"><center><img src="images/GESAM.jpg" style="border-radius: 50px;" onclick="window.location.href='gs.html';"> <br><p>GESAM</p></center></div>   <div class="btn btn- card"><center><img src="images/aen.jpg" style="border-radius: 50px;" onclick="window.location.href='aenics.html';"> <br><p>Aaenics</p></center></div>
+
         </div>
       
-            
             
             
             
